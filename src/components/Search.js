@@ -5,7 +5,10 @@ export default class Search extends Component {
   render() {
     this.el.classList.add("search");
     this.el.innerHTML = /* HTML */ `
-      <input placeholder="Enter the moive title to search!" />
+      <input
+        value="${movieStore.state.searchText}"
+        placeholder="Enter the moive title to search!"
+      />
       <button class="btn btn-primary">Search!</button>
     `;
     const inputEl = this.el.querySelector("input");
