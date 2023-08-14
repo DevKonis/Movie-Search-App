@@ -11,7 +11,8 @@ export default class MovieListMore extends Component {
       pageMax > page
         ? this.el.classList.remove("hide")
         : this.el.classList.add("hide");
-    });
+    }
+    );
   }
   render() {
     this.el.classList.add("btn", "view-more", "hide");
