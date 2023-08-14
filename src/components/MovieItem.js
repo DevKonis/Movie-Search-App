@@ -1,19 +1,18 @@
 import { Component } from "../core/core";
 
 export default class MovieItem extends Component {
-  constructor (props) {
+  constructor(props) {
     super({
       props,
-      tagName: 'a'
-    })
-    
+      tagName: "a",
+    });
   }
   render() {
-    const { movie } = this.props
+    const { movie } = this.props;
 
-    this.el.setAttribute('href', `#/movie?id=${movie.imdbID}`)
-    this.el.classList.add('movie')
-    this.el.style.backgroundImage = `url(${movie.Poster})`
+    this.el.setAttribute("href", `#/movie?id=${movie.imdbID}`);
+    this.el.classList.add("movie");
+    this.el.style.backgroundImage = `url(${movie.Poster})`;
     this.el.innerHTML = /*html*/ `
       <div class="info">
         <div class="year">
@@ -23,6 +22,6 @@ export default class MovieItem extends Component {
           ${movie.Title}
         </div>
       </div>
-    `
+    `;
   }
 }
