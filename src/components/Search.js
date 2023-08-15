@@ -1,5 +1,6 @@
 import { Component } from "../core/core";
 import movieStore, { searchMovies } from "../store/movie";
+import MovieListMore from "./MovieListMore";
 
 export default class Search extends Component {
   render() {
