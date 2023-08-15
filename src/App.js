@@ -1,7 +1,6 @@
 import { Component } from "./core/core";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
-import TheFooter from "./components/TheFooter";
 
 export default class App extends Component {
   render() {
