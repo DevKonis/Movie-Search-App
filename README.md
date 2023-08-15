@@ -12,6 +12,8 @@
 ## Information
 
 OMBb API based Movie Search App
+Please get first your OMDb API KEY
 
-- OMDb API KEY(me): 57ba070b(free, 1000 limits per day)
-- OMDb API KEY(heropy): 7035c60c(paid)
+- [Get Your OMDb API KEY](http://www.omdbapi.com/apikey.aspx)
+
+make sure change .env.templete
