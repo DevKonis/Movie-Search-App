@@ -11,11 +11,11 @@ export default class Movie extends Component {
         <div class="labels skeleton"></div>
         <div class="plot skeleton"></div>
       </div>
-    `
+    `;
     await getMovieDetails(history.state.id);
     console.log(movieStore.state.movie);
     const { movie } = movieStore.state;
-    const bigPoster = movie.Poster.replace('SX300', 'SX700')
+    const bigPoster = movie.Poster.replace("SX300", "SX700");
 
     this.el.innerHTML = /* html */ `
       <div style="background-image: url(${bigPoster})" class="poster"></div>
@@ -35,9 +35,9 @@ export default class Movie extends Component {
         </div>
         <div>
           <h3>Ratings</h3>
-          ${movie.Ratings.map(rating => {
-            return `<p>${rating.Source} - ${rating.Value}</p>`
-          }).join ('')}
+          ${movie.Ratings.map((rating) => {
+            return `<p>${rating.Source} - ${rating.Value}</p>`;
+          }).join("")}
           <p></p>
         </div>
         <div>

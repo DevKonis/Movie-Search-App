@@ -1,6 +1,15 @@
 import { Component } from "../core/core";
 
+interface State {
+  [key: string]: unknown;
+  menus: {
+    name: string;
+    href: string;
+  }[];
+}
+
 export default class TheHeader extends Component {
+  public state!: State;
   constructor() {
     super({
       tagName: "header",
@@ -21,9 +30,9 @@ export default class TheHeader extends Component {
         ],
       },
     });
-    window.addEventListener('popstate', () => {
-      this.render()
-    })
+    window.addEventListener("popstate", () => {
+      this.render();
+    });
   }
   render() {
     this.el.innerHTML = /* html */ `
@@ -34,16 +43,16 @@ export default class TheHeader extends Component {
       <ul>
         ${this.state.menus
           .map((menu) => {
-            const href = menu.href.split('?')[0]
-            const hash = location.hash.split('?')[0]
-            const isActive = href === hash
+            const href = menu.href.split("?")[0];
+            const hash = location.hash.split("?")[0];
+            const isActive = href === hash;
             return /* html */ `
             <li>
-              <a class="${isActive ? 'active' : ''}" href="${menu.href}">
+              <a class="${isActive ? "active" : ""}" href="${menu.href}">
                 ${menu.name}
               </a>
             </li>
-          `
+          `;
           })
           .join("")}
       </ul>
