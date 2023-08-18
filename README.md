@@ -1,6 +1,6 @@
-# Movie-Search-App
+# Movie-Search-App(merged: typescript)
 
-- Skills: HTML/CSS/JS
+- Skills: HTML/CSS/JS/TS
 
 ## Branches
 
