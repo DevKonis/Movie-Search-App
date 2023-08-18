@@ -1,4 +1,4 @@
-# Movie-Search-App
+# Movie-Search-App(JS-Only)
 
 - Skills: HTML/CSS/JS
 
