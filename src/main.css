@@ -33,7 +33,6 @@ body {
   }
 }
 
-
 .btn {
   height: 50px;
   padding: 0 20x;
@@ -153,7 +152,7 @@ header .user {
   bottom: 0;
   right: 40px;
   margin: auto;
-  transition: 0.3s
+  transition: 0.3s;
 }
 header .user:hover {
   transform: scale(1.2);
@@ -161,10 +160,10 @@ header .user:hover {
 header .user img {
   width: 100%;
 }
-@media (max-width:600px) {
+@media (max-width: 600px) {
   header {
     padding: 14px 20px;
-  }  
+  }
   header nav {
     display: none;
   }
@@ -200,12 +199,11 @@ footer a:hover {
 .headline p {
   color: var(--color-white-30);
 }
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .headeline h1 {
     font-size: 60px;
   }
 }
-
 
 .search {
   display: flex;
@@ -359,7 +357,6 @@ footer a:hover {
   }
 }
 
-
 .about .photo {
   width: 230px;
   height: 230px;
@@ -385,7 +382,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.not-found h1{
+.not-found h1 {
   font-size: 70px;
   font-weight: 700;
   color: var(--color-white-10);
